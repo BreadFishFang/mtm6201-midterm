@@ -57,6 +57,7 @@ table {
 .container{
     background-color: #f3f0e9;
     margin: 0 auto;
+    max-width: 768px;  /*this is the mobile min-width */
     
 }
 header, footer{
@@ -71,10 +72,13 @@ nav{
 h1, h2, h3, nav{
     font-family: "Lato", sans-serif;
 }
+/* the font-size here are for the mobile */
 h1{
+    color: #ffffff;
     font-size: 2.027rem;
 }
 h2{
+    color: #000000;
     font-size: 1.802rem;
 }
 h3{
@@ -84,3 +88,50 @@ p{
     font-family: "Karla", sans-serif;
     font-size: 1rem;
 }
+.orangetitle{
+    color: #d69e3d;
+}
+
+/*************        Nav STYLES        *************/
+.mainnav{
+    width: 100%;
+    /*position:sticky; trying to put the nav always on top, but....fix it later*/
+}
+.mainnav ul{
+    /* remove the default bullet points from unordered lists*/
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Change the logo and text menu to two rows, one above the other. */
+    align-items: center;     /* center it */
+    gap: 25px;
+    padding:1.5em 0 0 0;  /* add some space 
+}
+.logolink a {
+    /* Use flex to make the links the same distance.*/
+    display: flex;
+    align-items: center;    /* Image and text vertically centered */
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+}
+.menulink {
+    /* use flex and justify-content: center to place all the link stay in center */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding:0 2em 2em;
+}
+.menulink a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;        
+    font-weight: 900;  /* incress the font Boldness */
+    transition: color 0.3s; /* add a animation that change color in 0.3 second */
+}
+.menulink a:hover {
+    color:#d69e3d;
+}
+
