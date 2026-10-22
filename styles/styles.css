@@ -104,7 +104,7 @@ p{
     flex-direction: column; /* Change the logo and text menu to two rows, one above the other. */
     align-items: center;     /* center it */
     gap: 25px;
-    padding:1.5em 0 0 0;  /* add some space 
+    padding:1.5em 0 0 0;  /* add some space */
 }
 .logolink a {
     /* Use flex to make the links the same distance.*/
