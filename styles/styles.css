@@ -89,13 +89,15 @@ h3{
 }
 p{
     font-family: "Karla", sans-serif;
-    font-size: 1rem;
+    font-size:1.6em;
 }
 .orangetitle{
     padding:3rem 0 1em 15px;
     color: #d69e3d;
     /* Make the font bolder */
     font-weight: 700;
+    font-size:1.8em;
+    text-transform: uppercase;
 }
 /*************        Animation        *************
  *************                         *************/
@@ -192,7 +194,6 @@ h1{
     margin: 0 0 20px 0;
 }
 .header-container p{
-    font-size:1.5em;
     max-width: 540px;
     line-height: 1.25;
     margin: 0 0 45px 0;
@@ -221,12 +222,13 @@ h1{
     height: auto;
     flex-direction: column; 
     box-sizing: border-box;
+    margin-bottom: 4em;
 }
 .imgcollection{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:15px;
-    padding: 10px;
+    gap:25px;
+    padding: 15px;
 }
 .imgcollection img{
     /*Ensure that all images fill their respective grids completely 
@@ -239,4 +241,40 @@ h1{
 /* the first img take 2 grid space*/
 .imgcollection img:nth-child(1) {
     grid-column: span 2;
+}
+
+/*************        Reason Box STYLES        *************/
+.reason{
+    text-align: center;
+}
+.reason h3{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding:0;
+}
+.reasonbox{
+    display:flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column; 
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.reasonbox div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.reasonbox div h3{
+    padding: 0;
+}
+.reasonbox div img{
+    width: 250px;
+    padding: 4em 0 2.2em 0;
+}
+.reasonbox div p{
+    text-align: center;
+    padding: 1em 10%;
 }
