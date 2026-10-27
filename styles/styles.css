@@ -91,6 +91,13 @@ p{
 .orangetitle{
     color: #d69e3d;
 }
+/*************        Animation        *************
+ *************                         *************/
+@keyframes buttonanima{
+    0%{transform: scale(1)}
+    40%{transform: scale(1.05)}
+    100%{transform: scale(1)}
+}
 
 /*************        Nav STYLES        *************/
 .mainnav{
@@ -133,5 +140,70 @@ p{
 }
 .menulink a:hover {
     color:#d69e3d;
+}
+
+/*************        Header STYLES        *************/
+header{
+    position: relative;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+}
+.bannerimage, .bannerimage img{
+    width: 100%;
+    height: 100%;
+}
+.bannerimage img{
+    object-fit: cover;
+    object-position: center 45%
+}
+.header-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Push the entire article up a little. */
+    height: 100%;
+    /*Center all elements vertically */
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items:center;
+    /* add a dark background colour */
+    background: hsla(0, 0%, 0%, 50%); 
+    padding: 0 40px;
+    box-sizing: border-box;
+    /*width: calc(50%-80px);*/
+    
+}
+h1, .header-container p, .header-container button{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: 900;
+    font-size: 3.1em;
+    line-height: 1.15; /*Reduce the line spacing to match the mobile example picture*/
+    margin: 0 0 20px 0;
+}
+.header-container p{
+    font-size:1.5em;
+    max-width: 540px;
+    line-height: 1.25;
+    margin: 0 0 45px 0;
+}
+.header-container button{
+    /* the size of the botton is 50% of width */
+    width: 50%;
+    font-size: 1.3rem;
+    /* Make the font bolder */
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    /* I find this on the website to change all the letters to uppercase*/
+    text-transform: uppercase;
+    /* remove boeder */
+    border: none;
+    border-radius: 1px;
+    padding: 20px 10px; /* the button */    
 }
 
