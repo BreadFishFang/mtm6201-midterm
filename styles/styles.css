@@ -365,3 +365,62 @@ h1{
     padding: 12px 0;
     margin-top: 1em;
 }
+
+/*************        Testimonials STYLES        *************/
+
+.testimonials{
+    background: #000000;
+        padding: 15px 15px;
+}
+.testimonials h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.testimonials-list {
+    display: flex;
+    flex-direction: column;  
+    gap: 30px;
+}
+
+.testimonial-card {
+    position: relative;
+    width:100%;
+    height: 780px;
+    overflow: hidden;
+}
+.testimonial-card img {
+    width: 100%;
+    height: 100%;
+    /* Crops the photo proportionally to fill the frame */
+    object-fit: cover; 
+    object-position: center center;
+    display: block;
+}
+.testimonial-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.testimonial-content p {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 12px 0;
+}
+.testimonial-content blockquote{
+    display: block;
+    color: #d69e3d;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: "Lato", sans-serif;
+}
+
+/*************        Footer STYLES        *************/
