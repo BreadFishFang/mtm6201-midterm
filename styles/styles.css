@@ -83,13 +83,19 @@ h2{
 }
 h3{
     font-size: 1.424rem;
+    /* Make the font bolder */
+    font-weight: 800;
+    padding:0 0 1em 15px;
 }
 p{
     font-family: "Karla", sans-serif;
     font-size: 1rem;
 }
 .orangetitle{
+    padding:3rem 0 1em 15px;
     color: #d69e3d;
+    /* Make the font bolder */
+    font-weight: 700;
 }
 /*************        Animation        *************
  *************                         *************/
@@ -162,7 +168,6 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    /* Push the entire article up a little. */
     height: 100%;
     /*Center all elements vertically */
     display:flex;
@@ -176,7 +181,7 @@ header{
     /*width: calc(50%-80px);*/
     
 }
-h1, .header-container p, .header-container button{
+h1, .header-container p, .gotomenu{
     width: 100%;
     text-align: center;
 }
@@ -192,7 +197,7 @@ h1{
     line-height: 1.25;
     margin: 0 0 45px 0;
 }
-.header-container button{
+.gotomenu{
     /* the size of the botton is 50% of width */
     width: 50%;
     font-size: 1.3rem;
@@ -207,3 +212,31 @@ h1{
     padding: 20px 10px; /* the button */    
 }
 
+/*************        Main img Header STYLES        *************/
+.mainimgheader{
+
+    /*Center all elements vertically */
+    display:flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column; 
+    box-sizing: border-box;
+}
+.imgcollection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:15px;
+    padding: 10px;
+}
+.imgcollection img{
+    /*Ensure that all images fill their respective grids completely 
+    and that their proportions are not distorted.*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* the first img take 2 grid space*/
+.imgcollection img:nth-child(1) {
+    grid-column: span 2;
+}
