@@ -370,7 +370,7 @@ h1{
 
 .testimonials{
     background: #000000;
-        padding: 15px 15px;
+    padding: 80px 15px;
 }
 .testimonials h3{
     color: #ffffff;
@@ -424,3 +424,14 @@ h1{
 }
 
 /*************        Footer STYLES        *************/
+
+footer{
+    
+    padding: 20px;
+    text-align:center;
+}
+footer div{
+    padding: 10px;
+    border-top:1px solid #ffffff ;
+
+}
