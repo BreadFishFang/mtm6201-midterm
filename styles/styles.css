@@ -435,3 +435,86 @@ footer div{
     border-top:1px solid #ffffff ;
 
 }
+
+/****************************************************************************************
+                                    above 768 Media STYLES
+*****************************************************************************************/
+@media screen and (min-width:768px){
+    .container{
+        max-width: 1100px;
+    }
+    /*************        Main img Header STYLES        *************/
+    .imgcollection{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap:25px;
+        padding: 15px;
+    }
+    .imgcollection img:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    /*************        Reason Box STYLES        *************/
+    .reasonbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .reasonbox div{
+        width: 600px;
+    }
+    .reasonbox div:nth-child(3) {
+        grid-column: span 2;
+        justify-self: center;
+    }
+    /*************        Our Menu STYLES        *************/
+    .coffeeshop{
+        flex-direction: row;
+    }
+    .coffeeshop div:nth-child(1) button{
+        width: 70%;
+    }
+    .coffeeshop div:nth-child(2) button{
+        width: 70%;
+    }
+
+    /*************        Read Story STYLES        *************/
+    .readstory{
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+    }
+    .readstory article{
+        padding-left: 20px;
+    }
+    /*************        Testimonials STYLES        *************/
+    .testimonials-list {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .testimonial-content {
+        bottom: 40px;
+    }
+    /*************        Footer STYLES        *************/
+    footer{    
+        padding: 40px 15px 100px 15px;
+        text-align:center;
+    }
+}
+
+/****************************************************************************************
+                                    above 1100 Media STYLES
+*****************************************************************************************/
+@media screen and (min-width:1100px){
+    .container{
+        max-width: 1200px; 
+    }
+    .mainnav{
+        width: calc(100% - 40px);
+        padding: 20px 20px;
+    }
+    .mainnav ul{
+        flex-direction: row; /* Change the logo and text menu to two rows, one above the other. */
+        justify-content:space-between;     /* center it */
+
+    }
+}
+
