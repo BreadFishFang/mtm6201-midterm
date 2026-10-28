@@ -102,9 +102,9 @@ p{
 /*************        Animation        *************
  *************                         *************/
 @keyframes buttonanima{
-    0%{transform: scale(1)}
-    40%{transform: scale(1.05)}
-    100%{transform: scale(1)}
+
+    40%{transform: scale(1.03)}
+
 }
 
 /*************        Nav STYLES        *************/
@@ -120,6 +120,7 @@ p{
     align-items: center;     /* center it */
     gap: 25px;
     padding:1.5em 0 0 0;  /* add some space */
+    
 }
 .logolink a {
     /* Use flex to make the links the same distance.*/
@@ -136,20 +137,30 @@ p{
     /* use flex and justify-content: center to place all the link stay in center */
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
-    padding:0 2em 2em;
+    padding:0 2em 2em 2em;
+    
 }
 .menulink a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 14px;        
+    font-size: 14px;
+    padding: 10px;
     font-weight: 900;  /* incress the font Boldness */
+    align-items: center;
     transition: color 0.3s; /* add a animation that change color in 0.3 second */
 }
 .menulink a:hover {
     color:#d69e3d;
 }
-
+.menulink a:active, .menulink a:focus{
+    background-color: #d69e3d;
+    color: #000000;
+    animation-name:buttonanima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
 /*************        Header STYLES        *************/
 header{
     position: relative;
@@ -211,6 +222,18 @@ h1{
     border: none;
     border-radius: 1px;
     padding: 20px 0;
+    transition:0.3s;
+    cursor: pointer;
+}
+.gotomenu:hover{
+    color:#d69e3d;
+} 
+.gotomenu:focus, .gotomenu:active{
+    background-color: #d69e3d;
+    color:#000000;
+    animation-name:buttonanima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 /*************        Main img Header STYLES        *************/
@@ -329,6 +352,12 @@ h1{
     font-weight: 600;
     padding: 20px 0;
     border: 4px solid #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.coffeeshop div:nth-child(2) button:hover{
+    color:#d69e3d;
+    border: 4px solid #d69e3d;
 }
 
 /*************        Read Story STYLES        *************/
@@ -364,6 +393,16 @@ h1{
     color: #ffffff;
     padding: 12px 0;
     margin-top: 1em;
+    transition:0.3s;
+    cursor: pointer;
+}
+.readstory button:hover{
+    color:#d69e3d;
+}
+.readstory button:active, .readstory button:focus{
+    animation-name:buttonanima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 /*************        Testimonials STYLES        *************/
@@ -443,6 +482,7 @@ footer div{
     .container{
         max-width: 1100px;
     }
+    
     /*************        Main img Header STYLES        *************/
     .imgcollection{
         grid-template-columns: repeat(4, 1fr);
@@ -510,6 +550,9 @@ footer div{
     .mainnav{
         width: calc(100% - 40px);
         padding: 20px 20px;
+    }
+    .menulink {
+        padding: 0;
     }
     .mainnav ul{
         flex-direction: row; /* Change the logo and text menu to two rows, one above the other. */
