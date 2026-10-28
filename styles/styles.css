@@ -265,6 +265,11 @@ h1{
 .imgcollection img:nth-child(1) {
     grid-column: span 2;
 }
+.mainimgheader h3{
+    font-size: 2.5em;
+}
+
+
 
 /*************        Reason Box STYLES        *************/
 .reason{
@@ -427,6 +432,7 @@ h1{
     width:100%;
     height: 780px;
     overflow: hidden;
+    background: hsla(0, 0%, 0%, 50%);
 }
 .testimonial-card img {
     width: 100%;
@@ -547,17 +553,171 @@ footer div{
     .container{
         max-width: 1200px; 
     }
+    h1{
+        font-size:3.815rem;
+    }
+    h3{
+        font-size: 1.953 rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .orangetitle{
+        font-size: 14px;
+    }
+    /*************        Nav STYLES        *************/
     .mainnav{
-        width: calc(100% - 40px);
-        padding: 20px 20px;
+        width: calc(100% - 360px);
+        padding: 3px 180px;
     }
-    .menulink {
+    .logolink a img{
+        width: 150px;
+    }
+    .menulink{
         padding: 0;
+        gap: 20px;
     }
+    .menulink a{
+        padding: 0;
+        font-size: 10px;
+    }
+
     .mainnav ul{
         flex-direction: row; /* Change the logo and text menu to two rows, one above the other. */
         justify-content:space-between;     /* center it */
-
+        padding: 5px;
     }
+    /*************        Header STYLES        *************/
+    .header-container{
+        padding:0 250px;
+    }
+
+    /*************        Main img Header STYLES        *************/
+    .mainimgheader{
+        padding: 0 180px;
+        margin: 0;
+    }
+
+    .mainimgheader h3{
+        padding: 0 0 10px 0;
+    }
+    .orangetitle {
+        padding: 3rem 0 1em 0;
+    }
+    .imgcollection{
+        gap:10px;
+        padding:0;
+    }
+    /*************        Reason Box STYLES        *************/
+    .reason{
+        padding: 35px 180px 70px 180px;
+    }
+    .reason .orangetitle{
+        padding: 3rem 0 5px 0;
+    }
+
+    .reason h3{
+        font-size: 32px;
+        padding:5px 0 ;
+    }
+    .reasonbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .reasonbox div{
+        width: auto;
+        padding:10px;
+    }
+    .reasonbox div img{
+        width: 110px;
+        padding: 25px 0 10px 0;
+    }
+    .reasonbox div h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .reasonbox div p{
+        width: 260px;
+        font-size: 12px;
+    }
+    .reasonbox div:nth-child(3) {
+        grid-column: span 1;
+        justify-self: center;
+    }
+    /*************        Our Menu STYLES        *************/
+    .ourmenu{
+        height: 350px;
+    }
+    .coffeeshop{
+        padding:0 180px;
+    }
+    .ourmenu h3{
+        font-size: 34px;
+        padding-bottom: 40px;
+    }
+    .coffeeshop div .orangetitle {
+        padding: 1em 0 15px 0;
+    }
+    .coffeeshop div:nth-child(1) button {
+        width: 180px;
+        height: 40px;
+        margin-top: 5px;
+        letter-spacing: 0px;
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+    .coffeeshop div:nth-child(2) button {
+        width: 180px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+    /*************        Read Story STYLES        *************/
+
+    .readstory{
+        padding: 0 180px;
+    }
+    .readstory img{
+        width: 400px;
+    }
+    .readstory article p{
+        font-size: 12px;
+    }
+    .readstory article .orangetitle{
+        font-size: 14px;
+    }
+    .readstory article button{
+        font-size: 10px;
+    }
+    /*************        Testimonials STYLES        *************/
+    .testimonials{
+        padding: 35px 180px;
+    }
+    .testimonials h3{
+        padding: 0 0 1em 0;
+        width: 400px;
+    }
+    .testimonial-card{
+        height: 330px;
+    }
+    .testimonials-list{
+        gap:10px;
+    }
+    .testimonial-content p{
+        font-size: 10px;
+    }
+    .testimonial-content blockquote{
+        font-size: 12px;
+    }
+    .testimonial-content {
+        bottom: 10px;
+        padding: 15px;
+    }
+    /*move the img down a little bit */
+    .testimonial-card:nth-child(2) img, .testimonial-card:nth-child(3) img{
+        object-position: center 10%;
+    }
+    
 }
 
