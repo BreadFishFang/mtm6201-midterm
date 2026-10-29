@@ -54,6 +54,11 @@ table {
 /****************************************************************************************
                                     Main STYLES
 *****************************************************************************************/
+body{
+
+    font-family: "Karla", sans-serif;
+    line-height: 1.5;
+}
 .container{
     background-color: #f3f0e9;
     margin: 0 auto;
@@ -105,6 +110,19 @@ p{
 
     40%{transform: scale(1.03)}
 
+}
+/*************        Skip-link STYLES        *************/
+nav.skip-link a{
+    position: absolute;
+    /*hide the skip link*/
+    top:-1000px;
+    left:10px;
+    background: #000000;
+    color: #ffffff;
+    z-index: 100;
+}
+nav.skip-link a:focus {
+    top:0;
 }
 
 /*************        Nav STYLES        *************/
@@ -364,6 +382,11 @@ h1{
     color:#d69e3d;
     border: 4px solid #d69e3d;
 }
+.coffeeshop div:nth-child(2) button:active, .coffeeshop div:nth-child(2) button:focus{
+    animation-name:buttonanima;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
 
 /*************        Read Story STYLES        *************/
 .readstory{
@@ -458,7 +481,7 @@ h1{
     line-height: 1.4;
     margin: 0 0 12px 0;
 }
-.testimonial-content blockquote{
+.testimonial-content cite{
     display: block;
     color: #d69e3d;
     font-size: 1.5em;
@@ -506,7 +529,7 @@ footer div{
         grid-template-columns: 1fr 1fr;
     }
     .reasonbox div{
-        width: 600px;
+        width: auto;
     }
     .reasonbox div:nth-child(3) {
         grid-column: span 2;
@@ -557,7 +580,7 @@ footer div{
         font-size:3.815rem;
     }
     h3{
-        font-size: 1.953 rem;
+        font-size: 1.953rem;
     }
     p{
         font-size: 1rem;
@@ -707,7 +730,7 @@ footer div{
     .testimonial-content p{
         font-size: 10px;
     }
-    .testimonial-content blockquote{
+    .testimonial-content cite{
         font-size: 12px;
     }
     .testimonial-content {

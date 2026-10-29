@@ -10,19 +10,29 @@
     <title>My Coffee House</title>
 </head>
 <body>
+    <!--add skip links-->
+    <nav class="skip-link">
+        <ul>
+            <li><a href="#coffee-image">Skip to Coffee Image</a></li>
+            <li><a href="#our-offer">Skip to Offer</a></li>
+            <li><a href="#the-menu">Skip to Menu</a></li>
+            <li><a href="#aboutus">Skip to About Us</a></li>
+        </ul>
+    </nav>
+    
     <div class="container">
         <!--nav is on top of the page-->
         <nav class="mainnav">
             <ul>
                 <li class="logolink">
-                    <a href="#"> 
+                    <a href="#home"> 
                         <img src="images/my-coffee-shop-logo.svg" alt="coffee shop logo">
                     </a>
                 </li>
                 <li class="menulink">
-                    <a href="#"> ABOUT US</a>
-                    <a href="#"> MENU</a>
-                    <a href="#"> LOCATIONS</a>
+                    <a href="#aboutus"> ABOUT US</a>
+                    <a href="#the-menu"> MENU</a>
+                    <a href="#viewlocations"> LOCATIONS</a>
                 </li>
             </ul>
         </nav>
@@ -38,9 +48,9 @@
             </article>
         </header>
         
-        <Main>
+        <main>
             <!-- use flex here to arrange elements vertically-->
-            <section class="mainimgheader">                
+            <section id="coffee-image" class="mainimgheader">                
                 <p class="orangetitle">Welcome to My Coffee House</p>
                 <!-- add <br> to break the sentence into 2 line-->
                 <h3>EXPERIENCE A NEW WAY <br>TO TASTE COFFEE</h3>
@@ -53,7 +63,7 @@
                     <img src="images/smiling-employee.jpeg" alt="a girl is smiling">
                 </div>
             </section>
-            <section class="reason">
+            <section id="our-offer" class="reason">
                 <p class="orangetitle">What we Offer</p>
                 <h3>Why visit us?</h3>
                 <div class="reasonbox">
@@ -74,7 +84,7 @@
                     </div>
                 </div>
             </section>
-            <section class="ourmenu">
+            <section id="the-menu" class="ourmenu">
                 <img src="images/coffee-shop.jpeg" alt="a coffee shop"> 
                 <article class="coffeeshop">
                     <div>
@@ -82,14 +92,14 @@
                         <h3>Explore what we have to offer you</h3>
                         <button class="gotomenu">Explore our menu</button>
                     </div>
-                    <div>
+                    <div id="viewlocations">
                         <p class="orangetitle">Locations</p>
                         <h3>Find your nearest coffee shop</h3>
                         <button>View Locations</button>
                     </div>
                 </article>
             </section>
-            <section class="readstory">
+            <section id="aboutus" class="readstory">
                 <img src="images/about-us.jpeg" alt="a man making coffee">
                 <article>
                     <p class="orangetitle">About Us</p>
@@ -107,21 +117,21 @@
                         <img src="images/testimonial-1.jpeg" alt="a person drinking coffee">
                         <div class="testimonial-content">
                             <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-                            <blockquote>Jane D., Toronto</blockquote>
+                            <cite>Jane D., Toronto</cite>
                         </div>
                     </div>
                     <div class="testimonial-card">
                         <img src="images/testimonial-2.jpeg" alt="a man working in the coffee shop">
                         <div class="testimonial-content">
                             <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-                            <blockquote>Scott S., Ottawa</blockquote>
+                            <cite>Scott S., Ottawa</cite>
                         </div>
                     </div>
                     <div class="testimonial-card">
                         <img src="images/testimonial-3.jpeg" alt="a woman having a cold coffee">
                         <div class="testimonial-content">
                             <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
-                            <blockquote>Susie F., Ottawa</blockquote>
+                            <cite>Susie F., Ottawa</cite>
                         </div>
                     </div>
                 </article>
